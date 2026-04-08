@@ -1,0 +1,19 @@
+.rps{
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+#rock{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfn63it6iEleCmWY8gEKMupjqtAC4M7kN-Vw&s);
+}
+#paper{
+    background-image: url(https://rukminim2.flixcart.com/image/480/480/kqo3onk0/toilet-paper-roll/5/w/n/3-ply-toilet-paper-roll-best-product-ever-soft-made-with-virgin-original-imag4mr4cchqwffh.jpeg?q=90);
+}
+#scissors{
+    background-image: url(https://media.tenor.com/OAKsRGYprtAAAAAM/scissors-opening-and-closing.gif);
+}
+#reset{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2J7sbY2TI2KQjevs11e53iUkgsfuu9vFsQg&s);
+    background-size: contain;
+}
