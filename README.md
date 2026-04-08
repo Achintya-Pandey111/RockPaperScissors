@@ -1,17 +1,71 @@
-# React + Vite
+Rock Paper Scissors Game
+Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Rock Paper Scissors game built using React. The user plays against the computer, and the game keeps track of scores, rounds, move history, and win streaks.
 
-Currently, two official plugins are available:
+Features
+User vs Computer gameplay
+Random computer move generation
+Score tracking for both user and computer
+Round counter to track total rounds played
+Winner display for each round
+Move history showing previous moves and results
+Streak tracker to display consecutive user wins
+Reset functionality to restart the game
+How It Works
+The user selects one of three options: Rock, Paper, or Scissors.
+The computer randomly selects a move.
+The winner of the round is determined based on standard game rules:
+Rock beats Scissors
+Paper beats Rock
+Scissors beats Paper
+Scores are updated accordingly.
+The game also records:
+Total rounds played
+Result of each round
+History of moves
+Current winning streak of the user
+State Management
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application uses React's useState hook to manage:
 
-## React Compiler
+userScore – Tracks the user's score
+computerScore – Tracks the computer's score
+rounds – Number of rounds played
+message – Displays the result of the current round
+history – Stores past moves and results
+streak – Tracks consecutive wins by the user
+Functions
+handleClick(userMove)
+Handles user input
+Generates a random computer move
+Determines the winner
+Updates scores, rounds, streak, message, and history
+resetIt()
+Resets all scores and game data to initial state
+Project Structure
+App.jsx
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+All logic and UI are contained within a single React component.
 
-## Expanding the ESLint configuration
+Installation and Setup
+Clone the repository
+Navigate to the project directory
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# RockPaperScissors
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+Future Improvements
+Add target score to end the game automatically
+Improve UI with better styling and visuals
+Add animations for moves and results
+Implement a smarter AI instead of random selection
+Add multiplayer mode
+Technologies Used
+React
+JavaScript
+CSS
